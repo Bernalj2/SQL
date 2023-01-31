@@ -1,0 +1,22 @@
+-----Create a manga store data base
+
+create table manga ( id integer primary key, title text, quantity integer, price integer, popularity text);
+
+insert into manga values (1, "Black Clover", 23, 12, "Medium");
+insert into manga values (2, "Dragon Ball Z", 8, 10, "High");
+insert into manga values (3, "Naruto", 13, 10, "High");
+insert into manga values (4, "Bleach", 8, 11, "High");
+insert into manga values (5, "Berserk", 14, 12, "Medium");
+insert into manga values (6, "Demon Slayer", 11, 12, "High");
+insert into manga values (7, "One Punch Man", 24, 10, "Medium");
+insert into manga values (8, "Vinland Saga", 1, 12, "High");
+insert into manga values (9, "Parasyte the Maxim", 23, 10, "Medium");
+insert into manga values (10, "The Promised Neverland", 19, 10, "Low");
+insert into manga values (11, "One Piece", 7, 11, "High");
+insert into manga values (12, "Attack on Titan", 9, 12, "High");
+insert into manga values (13, "Beyond the Clouds", 22, 10, "Low");
+insert into manga values (14, "Downfall", 23, 10, "Low");insert into manga values (15, "Persona 5", 28, 10, "low");
+
+---Display by price
+select * from manga order by price;
+select * from manga where quantity < 15
